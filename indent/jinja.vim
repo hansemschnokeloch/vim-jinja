@@ -54,7 +54,7 @@ function! GetDjangoIndent(...)
     let tagend = '.*-\?%}' . '.*'
 
     let blocktags = '\(block\|for\|if\|with\|autoescape\|comment\|filter\|spaceless\|macro\)'
-    let midtags = '\(empty\|else\|elif\)'
+    let midtags = '\(empty\|else\|elseif\|elif\)'
 
     let pnb_blockstart = pnb =~# tagstart . blocktags . tagend
     let pnb_blockend   = pnb =~# tagstart . 'end' . blocktags . tagend
